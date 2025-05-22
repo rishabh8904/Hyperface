@@ -25,12 +25,12 @@ class Transaction {
     }
 }
 
-// Root route handler
+
 app.get('/', (req, res) => {
     res.send('Welcome to the Transaction API!');
 });
 
-// Add transaction
+
 app.post('/transactions', (req, res) => {
     try {
         const { id, amount, type, category } = req.body; // Include all properties
